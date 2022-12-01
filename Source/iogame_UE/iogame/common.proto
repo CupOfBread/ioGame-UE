@@ -1,0 +1,86 @@
+syntax = "proto3";
+package pb.common;
+
+// 学校等级信息
+message SchoolLevelPb {
+  // 学校等级 level
+  int32 level = 1;
+  // vip 等级
+  int32 vipLevel = 2;
+
+}
+
+message OtherVerify {
+  // jwt
+  string jwt = 1;
+
+}
+
+message RoomNumPb {
+  // 房间的数量
+  int32 roomCount = 1;
+
+}
+
+// 用户信息
+message UserInfo {
+  // id
+  int64 id = 1;
+  // 用户名
+  string name = 2;
+  int32 tempInt = 3;
+  // Long value
+  int64 time = 4;
+  // long value
+  int64 time2 = 5;
+
+}
+
+// 登录信息
+message LoginVerify {
+  // age 测试用的,Integer
+  int32 age = 1;
+  // jwt
+  string jwt = 2;
+  // 登录业务码
+  int32 loginBizCode = 3;
+  // Long value
+  int64 time = 4;
+  // long value
+  int64 time2 = 5;
+
+}
+
+// 班级信息
+message ClassesPb {
+  // 班级学生数量
+  int32 studentNum = 1;
+
+}
+
+// 学校信息
+message SchoolPb {
+  // 学校的 email
+  string email = 1;
+  // 学校最大教室容量
+  int32 classCapacity = 2;
+  // 学校老师数量
+  int32 teacherNum = 3;
+  // 学校名
+  string name = 4;
+
+}
+
+// 广播消息PB
+message SpringBroadcastMessagePb {
+  // 具体的广播消息内容
+  string msg = 1;
+
+}
+
+// 逻辑请求 PB
+message LogicRequestPb {
+  string name = 1;
+
+}
+
